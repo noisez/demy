@@ -117,8 +117,6 @@ export default class Auth extends Component {
                     <form onSubmit={this.submitHandler} className="auth-form">
 
                         { this.renderInputs() }
-                        {/*<Input label="Email"/>*/}
-                        {/*<Input label="Пароль" errorMessage='Test'/>*/}
                         <Button type="success" onClick={this.loginHandler} disabled={!this.state.isFormValid}>Войти</Button>
                         <Button type="primary" onClick={this.registerHandler} disabled={!this.state.isFormValid}>Зарегестрироваться</Button>
                     </form>
